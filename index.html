@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h class="heading" id="heading">devfinder</h>
+        <button class="mode" id="mode">
+          <h class="dark" id="dark">Dark</h>
+          <img class="moon" id="moon" src="./images/Path (4).png" alt="moon" />
+        </button>
+      </div>
+      <div class="search">
+        <form>
+          <input
+            class="input"
+            type="text"
+            id="input"
+            placeholder="Search GitHub username…"
+          />
+          <h class="error_txt" id="error_txt">No results</h>
+          <button class="btn" id="btn">Search</button>
+        </form>
+      </div>
+      <div class="main" id="main">
+        <div class="above">
+          <img
+            id="avatar"
+            class="avatar"
+            src="./images/Bitmap (9).png"
+            alt="github_avatar"
+          />
+          <div class="info">
+            <div class="names_bio">
+              <div class="names">
+                <h class="name" id="name">The Example </h>
+                <p class="link" id="link">@octocat</p>
+              </div>
+              <p class="joined" id="joined">Joined 25 Jan 2011</p>
+            </div>
+            <p class="bio" id="bio">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae, ad provident.
+            </p>
+          </div>
+        </div>
+        <div>
+          <p class="bio_hidden" id="bio_hidden">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore qui
+          </p>
+        </div>
+
+        <div class="below_cont">
+          <div class="below">
+            <div class="numbers" id="numbers">
+              <div class="rep_foll">
+                <p class="about">Repos</p>
+                <p class="num" id="repos">0</p>
+              </div>
+              <div class="rep_foll">
+                <p class="about">Followers</p>
+                <p class="num" id="followers">0</p>
+              </div>
+              <div class="rep_foll">
+                <p class="about">Following</p>
+                <p class="num" id="following">0</p>
+              </div>
+            </div>
+            <div class="servers">
+              <div class="github_location">
+                <div class="location">
+                  <img class="SM" src="./images/003-pin.svg" alt="location" />
+                  <p class="txt" id="location">location</p>
+                </div>
+                <div class="location">
+                  <img class="SM" src="./images/002-url.svg" alt="guthub" />
+                  <p class="txt" id="github">https://github.blog</p>
+                </div>
+              </div>
+              <div class="github_location">
+                <div class="location">
+                  <img
+                    class="SM"
+                    src="./images/004-twitter.svg"
+                    alt="twitter"
+                  />
+                  <p class="txt" id="twitter">Not Available</p>
+                </div>
+                <div class="location">
+                  <img
+                    class="SM"
+                    src="./images/001-office-building.svg"
+                    alt="building"
+                  />
+                  <p class="txt" id="company">company</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

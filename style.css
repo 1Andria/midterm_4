@@ -1,0 +1,667 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* 750 */
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    background-color: #F6F8FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    max-width: 730px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.heading{
+    color: #222731;
+    font-family: "Space Mono";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.heading_dark{
+    color: white;
+    font-family: "Space Mono";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.dark{
+    color: #697C9A;
+    text-align: right;
+    font-family: "Space Mono";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.5px;
+}
+.dark_dark{
+    color: white;
+    text-align: right;
+    font-family: "Space Mono";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.5px;
+}
+
+.mode{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border: 0px;
+    background-color: transparent;
+}
+.mode:hover{
+    filter: brightness(0) saturate(100%) invert(13%) sepia(18%) saturate(635%) hue-rotate(181deg) brightness(103%) contrast(96%);
+    
+}
+.mode_dark{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border: 0px;
+    background-color: transparent;
+}
+.mode_dark:hover{
+    filter: brightness(0) saturate(100%) invert(77%) sepia(4%) saturate(4368%) hue-rotate(191deg) brightness(86%) contrast(93%);
+
+}
+.light{
+    color: #FFF;
+    text-align: right;
+    font-family: "Space Mono";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.5px;
+}
+
+.moon{
+    margin: -3px;
+    margin-left: 3px;
+    width: 20px;
+    height: 20px;
+    
+}
+.input{
+    width: 730px;
+    height: 69px;
+    border-radius: 15px;
+    background: #FEFEFE;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+    border: none;
+    background-image: url(./images/Combined\ Shape\ \(2\).png);
+    background-repeat: no-repeat;
+    background-position-x:32px ;
+    background-position-y:23px ;
+    padding-left: 70px;
+    font-size: 18px;
+    padding-right: 130px;
+}   
+.input_dark{
+    width: 730px;
+    height: 69px;
+    border-radius: 15px;
+    background: #1E2A47;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+    border: none;
+    background-image: url(./images/Combined\ Shape\ \(2\).png);
+    background-repeat: no-repeat;
+    background-position-x:32px ;
+    background-position-y:23px ;
+    padding-left: 70px;
+    font-size: 18px;
+    padding-right: 130px;
+    color: white;
+    
+}
+.input::placeholder{
+    color: #4B6A9B;
+    font-family: "Space Mono";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; 
+}
+.search{
+    position: relative;
+}
+.btn{
+    width: 106px;
+    height: 50px;
+    border-radius: 10px;
+    background: #0079FF;
+    border: none;
+    color: #FFF;
+    font-family: "Space Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+    right: 10px;
+    top: 9.5px;
+}
+.error_txt{
+    color: #F74646;
+    font-family: "Space Mono";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+    right: 130px;
+    top: 20px;
+    display: none;
+}
+.btn:hover{
+    border-radius: 10px;
+    background: #60ABFF;
+    color: #FFF;
+    font-family: "Space Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.above{
+    display: flex;
+    justify-content: space-between;
+}
+.avatar{
+    width: 117px;
+    height: 117px;
+    border-radius: 50%;
+    
+}
+.main{
+    width: 730px;
+    padding:48px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background: #FEFEFE;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+    height: 460px;
+}
+.main_dark{
+    width: 730px;
+    padding:48px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background: #1E2A47;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+}
+.names{
+    width:290px ;
+    
+}
+.names_bio{
+    display: flex;
+    justify-content: space-between;
+    width: 480px;
+    height: 30px;
+
+}
+.name{
+    color: #2B3442;
+    font-family: "Space Mono";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+.name_dark{
+    color: white;
+    font-family: "Space Mono";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.link{
+    color: #0079FF;
+    font-family: "Space Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100px;
+}
+.bio{
+    color: #4B6A9B;
+    font-family: "Space Mono";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; 
+    opacity: 0.75;
+    margin-top: 25px;
+    width: auto;
+}
+.bio_dark{
+    color: white;
+    font-family: "Space Mono";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; 
+    opacity: 0.75;
+    margin-top: 25px;
+    width: auto;
+}
+.info{
+    display: flex;
+    gap: 37px;
+    flex-direction: column;
+    margin-left: 36px;
+}
+
+.joined{
+    color: #697C9A;
+    text-align: right;
+    font-family: "Space Mono";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width:170px ;
+    height: 30px;
+}
+.joined_dark{
+    color: white;
+    text-align: right;
+    font-family: "Space Mono";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width:170px ;
+    height: 30px;
+}
+.rep_foll{
+    display: flex;
+    flex-direction: column;
+}
+.about{
+    color: #4B6A9B;
+    font-family: "Space Mono";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.about_dark{
+    color:white;
+    font-family: "Space Mono";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.below_cont{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-top: 32px;
+}
+.below{
+    width: 480px;
+    height: 185px;
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+    
+}
+.num{
+    color: #2B3442;
+    font-family: "Space Mono";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.num_dark{
+    color: #2B3442;
+    font-family: "Space Mono";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.github_location{
+    display:flex ;
+    flex-direction: column;
+    gap: 19px;
+}
+.numbers{
+    width: 480px;
+    height: 85px;
+    flex-shrink: 0;
+    display: flex;
+    gap: 90px;
+    padding-right: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: #F6F8FF;
+}
+.numbers_dark{
+    width: 480px;
+    height: 85px;
+    flex-shrink: 0;
+    display: flex;
+    gap: 90px;
+    padding-right: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: #141D2F;
+}
+.location{
+    display: flex;
+    gap: 19px;
+}
+.txt{
+    color: #4B6A9B;
+    font-family: "Space Mono";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.txt:hover{
+    text-decoration: underline;
+}
+.servers{
+    display: flex;
+    gap: 100px;
+}
+.bio_hidden{
+    display: none;
+    color: #4B6A9B;
+    font-family: "Space Mono";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; 
+    opacity: 0.75;
+    margin-top: 20px;
+    width: auto;
+
+}
+.bio_hiddendark{
+    display: none;
+    color: white;
+    font-family: "Space Mono";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; 
+    opacity: 0.75;
+    margin-top: 20px;
+    width: auto;
+
+}
+@media (max-width:750px) {
+    .container{
+        width: 573px;
+    }
+    .main{
+        padding: 40px;
+        width: 573px;
+        height: 500px;
+    }
+    .names_bio{
+        display: flex;
+        flex-direction: column;
+    }
+    .input{
+        width: 573px;
+    }
+    .names_bio{
+        width:auto ;
+    }
+    .above{
+        display: flex;
+        justify-content: start;
+    }
+    .joined{
+        margin-top: 10px;
+        text-align: start;
+    }
+    .bio{
+        display: none;
+    }
+    .bio_hidden{
+        display: block;
+        color: #4B6A9B;
+        font-family: "Space Mono";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px; 
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .bio_hiddendark{
+        
+        color: white;
+        font-family: "Space Mono";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px; 
+        opacity: 0.75;
+        margin-top: 20px;
+        width: auto;
+    
+    }
+    
+    
+}
+@media (max-width:590px) {
+    .container{
+        width: 327px;
+    }
+    .main{
+        padding-left: 24px;
+        padding-top: 32px;
+        width: 327px;
+        height: 520px;
+    }
+    .names_bio{
+        display: flex;
+        flex-direction: column;
+    }
+    .input{
+        width: 327px;
+    }
+    .avatar{
+        width: 70px;
+        height: 70px;
+    }
+    .name{
+        color: #2B3442;
+        font-family: "Space Mono";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .name_dark{
+        color: white;
+        font-family: "Space Mono";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .link{
+        color: #0079FF;
+        font-family: "Space Mono";
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .joined{
+        color: #697C9A;
+        font-family: "Space Mono";
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: start;
+    }
+    .joined_dark{
+        color: white;
+        text-align: right;
+        font-family: "Space Mono";
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: start;
+    }
+    .bio_hidden{
+        color: #4B6A9B;
+        font-family: "Space Mono";
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+        margin-left: 0px;
+    }
+    .bio_hiddendark{
+        color: white;
+        font-family: "Space Mono";
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px; 
+        opacity: 0.75;
+        margin-top: 20px;
+        width: auto;
+    
+    }
+    .input::placeholder{
+        color: #4B6A9B;
+        font-family: "Space Mono";
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+    }
+    .input{
+        font-size: 13px;
+    }
+    .btn{
+        width: 84px;
+        height: 46px;
+        color: #FFF;
+        text-align: center;
+        font-family: "Space Mono";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal; 
+       
+    }
+    .btn:hover{
+        font-size: 14px;
+    }
+    .about{
+        color: #4B6A9B;
+        text-align: center;
+        font-family: "Space Mono";
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .about_dark{
+        color:white;
+        text-align: center;
+        font-family: "Space Mono";
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .num{
+        color: #2B3442;
+        text-align: center;
+        font-family: "Space Mono";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    .below{
+        width: 327px;
+    }
+    .numbers{
+        width:  279px;
+        gap: 30px;
+        padding-right: 0px;
+        
+    }
+    .servers{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+        
+    }
+    .txt{
+        color: #4B6A9B;
+        font-family: "Space Mono";
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .SM{
+        width: 13.753px;
+        height: 20px;
+    }
+    .below_cont{
+        justify-content: center;
+        padding-left: 15px;
+    }
+    .names{
+        width: 200px;
+    }
+    .error_txt{
+        font-size: 13px;
+        top: 0px;
+    }
+    
+}
