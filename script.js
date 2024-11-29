@@ -24,6 +24,8 @@ let moon = document.getElementById("moon");
 let twitter = document.getElementById("twitter");
 let company = document.getElementById("company");
 let error_txt = document.getElementById("error_txt");
+let div_bio = document.getElementById("div_bio");
+let div_bio_hidden = document.getElementById("div_bio_hidden");
 
 btn.addEventListener("click", async (value) => {
   value.preventDefault();
@@ -88,6 +90,7 @@ btn.addEventListener("click", async (value) => {
     twitter.textContent = "Undefined";
     locationn.textContent = "Undefined";
     bio.textContent = "Please enter correct username";
+    bio_hidden.textContent = "Please enter correct username";
     avatar.src = "./images/github.png";
     repos.textContent = "NAN";
     followers.textContent = "NAN";
@@ -117,6 +120,8 @@ function DarkLightModes() {
     numbers.classList.add("numbers_dark");
     namee.classList.add("name_dark");
     joined.classList.add("joined_dark");
+    div_bio.classList.add("div_bio_dark");
+    div_bio_hidden.classList.add("div_bio_hidden_dark");
     bio.classList.add("bio_dark");
     bio_hidden.classList.add("bio_hiddendark");
     for (let j = 0; j < about.length; j++) {
@@ -144,6 +149,8 @@ function DarkLightModes() {
     numbers.classList.remove("numbers_dark");
     namee.classList.remove("name_dark");
     joined.classList.remove("joined_dark");
+    div_bio.classList.remove("div_bio_dark");
+    div_bio_hidden.classList.remove("div_bio_hidden_dark");
     bio.classList.remove("bio_dark");
     bio_hidden.classList.remove("bio_hiddendark");
     for (let j = 0; j < about.length; j++) {
